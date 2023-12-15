@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My quiz</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Rosita's nerdy quiz</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Welcome</h2>
+            <p>My name is Rosita and I work as a developer at <a href="https://www.websitebezorgd.nl/">Websitebezorgd</a>. A few days ago I had to build a donation form for a client at work. It didn't go well. But I know I can build a form. That's why I built this website. This is the result and no I didn't use ChatGPT.</p>
+            <button class="next-btn" onclick="showNameForm()">Next</button>
+            <div id="name-form">
+                <form id="quiz-form">
+                    <label for="name">Enter your name</label>
+                    <input type="text" id="name" name="name" value="" required />
+                    <button type="submit" value="submit" onclick="handleSubmit()">Send</button>
+                </form>
+                <a href="./quiz.html"><button class="next-btn">Next</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Rosita's nerdy quiz. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My quiz</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Rosita's nerdy quiz</h1>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Quiz time!</h2>
+            <p>My name is Rosita and I work as a developer at <a href="https://www.websitebezorgd.nl/">Websitebezorgd</a>. A few days ago I had to build a donation form for a client at work. It didn't go well. But I know I can build a form. That's why I built this website. This is the result and no I didn't use ChatGPT.</p>
+            <button class="next-btn" onclick="showQuizForm()">start</button>
+            <form id="quiz-form">
+                <div class="questions question1">
+                    <label for="question1">Question 1: What is Ada Lovelace best known for?</label>
+                    <input type="text" id="question1" name="question1"/>
+                    <button type="submit" value="submit">Check answer</button>
+                    <!-- Writing the first computer program. -->
+                </div>
+
+                <div class="questions question2">
+                    <p for="question2">Question 2: Who founded Google?</p>
+                    <input type="checkbox" id="a" name="a" />
+                    <label for="a">Sergey Brin</label>
+                    <input type="checkbox" id="b" name="b" />
+                    <label for="b">Elon Musk</label>
+                    <input type="checkbox" id="c" name="c"  />
+                    <label for="c">Larry Page</label>
+                    <input type="checkbox" id="d" name="d"  />
+                    <label for="d">Sundar Pichai</label>
+                    <button type="submit" value="submit" onclick="checkAnswer2()">Check answer</button>
+                     <!-- Larry Page and Sergey Brin -->
+                </div>
+
+                <div class="questions question3">
+                    <label for="question3">Question 3: Who was Grace Hopper?</label>
+                    <input type="text" id="question3" name="question3" required />
+                    <button type="submit" value="submit">Check answer</button>
+                    <!-- Inventor of the COBOL programming language -->
+                </div>
+
+                <div class="questions question4">
+                    <label for="question4">Question 4: Atari released which famous video game in 1972?</label>
+                    <input type="text" id="question4" name="question4" required />
+                    <button type="submit" value="submit">Check answer</button>
+                    <!-- Pong -->
+                </div>
+
+                <div class="questions question5">
+                    <label for="question5">Question 5: BSoD is short for:</label>
+                    <input type="text" id="question5" name="question5" required />
+                    <button type="submit" value="submit" onclick="checkAnswer5()">Check answer</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Rosita's nerdy quiz. All rights reserved.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
