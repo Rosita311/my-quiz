@@ -2,16 +2,34 @@ body {
     max-width: 900px;
     margin: auto;
     padding: 0 2.5rem 0 2.5rem;
-    background-color: #dcadfa;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
 }
 
+
 h1, h2, label {
     font-family: 'Ubuntu Mono', monospace;
     font-weight: 700;
+}
+
+/* Styles for specific pages */
+#index {
+    background-color: #dcadfa;
+}
+
+#quiz {
+    background-color: #a8f9ee;
+}
+
+#index h1, #index h2, #index label {
     color: #3e015c;
 }
+
+#index h1, #index h2, #index label {
+    color: #005451;
+}
+
+
 /* Initially hides forms */
 #name-form, #quiz-form {
     display: none;
