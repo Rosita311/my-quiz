@@ -19,9 +19,24 @@ const handleSubmit = () => {
 
 // Show quiz form
 const showQuizForm = () => {
-    const quizForm = document.getElementById("quiz-form");
-    if (quizForm.style.display = "none") {
+  const question1 = document.getElementsByClassName("question1");
+  const question2 = document.getElementsByClassName("question2");
+  const question3 = document.getElementsByClassName("question3");
+  const question4 = document.getElementsByClassName("question4");
+  const question5 = document.getElementsByClassName("question5");
+  const questions = document.getElementsByClassName("questions");
+  const quizForm = document.getElementById("quiz-form");
+    if (quizForm.style.display === "none") {
       quizForm.style.display = "block";
+      if(quizForm.style.display = "block") {
+        question1.style.display = "block";
+        question2.style.display = "none";
+        question3.style.display = "none";
+        question4.style.display = "none";
+        question5.style.display = "none";
+      } else {
+        questions.style.display = "none";
+      }
     } else {
       quizForm.style.display = "none";
     }
